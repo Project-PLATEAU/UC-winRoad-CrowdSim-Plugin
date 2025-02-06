@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>環境構築手順書 </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="環境構築手順書 ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="環境構築手順書">環境構築手順書</h1>
+
+<h2 id="1-本書について">1 本書について</h2>
+<p>本書は, 人流シミュレーションプラグイン(UC-win/Roadプラグイン)（以下「本システム」という. ）の利用環境構築手順について記載しています.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>本システムの構成や仕様の詳細については<a href="https://www.mlit.go.jp/plateau/news/">技術検証レポート</a>も参考にしてください.</p>
+</div>
+<h2 id="2-動作環境">2 動作環境</h2>
+<p>本システムの動作環境は以下のとおりです.</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>最小動作環境</th>
+<th>推奨動作環境</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>Microsoft Windows10 / 11(64bit)</td>
+<td>同左</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>IntelCorei5以上</td>
+<td>同左</td>
+</tr>
+<tr>
+<td>GPU</td>
+<td>NVIDIA製GPU</td>
+<td>NVIDIA Geforce GTX1650以上(4GB以上のメモリ)</td>
+</tr>
+<tr>
+<td>メモリ</td>
+<td>4GB以上</td>
+<td>32GB以上</td>
+</tr>
+<tr>
+<td>ストレージ</td>
+<td>最低30GB以上の空き容量</td>
+<td>SSDドライブ<br>最低60GB以上の空き容量</td>
+</tr>
+<tr>
+<td>ディスプレイ解像度</td>
+<td>1920×1080以上</td>
+<td>同左</td>
+</tr>
+<tr>
+<td>ネットワーク</td>
+<td>必須</td>
+<td>同左</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-インストール手順">3 インストール手順</h2>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>本システムを実行するにはUC-win/Roadが必要です. 詳細は株式会社フォーラムエイトにお問い合わせ下さい.<br>
+<a href="https://www.forum8.co.jp/index.html">フォーラムエイト(HP)</a><br>
+<a href="https://www.forum8.co.jp/tech/tech.htm">フォーラムエイト(サポートページ)</a></p>
+</div>
+<h3 id="3-1-f8crowdsimplugin">3-1 F8CrowdSimPlugin</h3>
+<ol>
+<li><a href="https://www.mlit.go.jp/plateau/news/">GitHubページ</a>からF8CrowdSimPlugin. bplをダウンロードします.</li>
+<li>WindowsのエクスプローラでUC-win/Roadのデータディレクトリを開きます.
+<div class="TIP">
+<h5>Tip</h5>
+<p>データディレクトリの場所は, UC-win/Roadで確認できます.<br>
+UC-win/Roadを起動して, メイン画面上部の「ファイル」タブ&gt;&gt;「アプリケーションオプション」&gt;&gt;「デフォルト設定」を押下します.<br>
+「アプリケーションデフォルト」画面が開くので, 画面左側のタブから「フォルダ, ファイル関連」を選択します. 「データディレクトリ」項目に記載されている場所を確認します.<br>
+<img src="../resources/devMan/applicationDefaultForm.png" alt="アプリケーションデフォルト画面"></p>
+</div>
+</li>
+<li>データディレクトリ直下の「Plugins」フォルダを開きます(もし「Plugins」フォルダが無ければ作成してください).</li>
+<li>「Plugins」フォルダ直下にダウンロードしたF8CrowdSimPlugin. bplを設置します.</li>
+</ol>
+<h3 id="3-2-crowdsim">3-2 CrowdSim</h3>
+<ol>
+<li><a href="https://www.mlit.go.jp/plateau/news/">GitHubページ</a>からCrowdSim. exeをダウンロードします.</li>
+<li>WindowsのエクスプローラでUC-win/Roadの実行ファイル(UCwinRoad. exe)があるフォルダを開きます.</li>
+<li>前項で開いたフォルダに, ダウンロードしたCrowdSim. exeを設置します.</li>
+</ol>
+<h2 id="4-ビルド手順">4 ビルド手順</h2>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>F8CrowdSimPluginをビルドするにはUC-win/Road SDKが必要です. 詳細は株式会社フォーラムエイトにお問い合わせ下さい. <br>
+<a href="https://www.forum8.co.jp/index.html">フォーラムエイト(HP)</a><br>
+<a href="https://www.forum8.co.jp/tech/tech.htm">フォーラムエイト(サポートページ)</a></p>
+</div>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>F8CrowdSimPlugin,  CrowdSimをビルドするにはDelphi 10. 4. 2が必要です. IDE Patchesは全て適用済みの状態にして下さい.</p>
+</div>
+<p>ソースファイルからF8CrowdSimPlugin,  CrowdSimを生成することができます. <br>
+ソースファイルは<a href="https://www.mlit.go.jp/plateau/news/">こちら</a>からダウンロード可能です. <br>
+srcフォルダ下にF8CrowdSimPlugin,  CrowdSimフォルダがあります.</p>
+<table>
+<thead>
+<tr>
+<th>フォルダ名</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F8CrowdSimPlugin</td>
+<td>F8CrowdSimPlugin. bplのソースコード</td>
+</tr>
+<tr>
+<td>CrowdSim</td>
+<td>CrowdSim. exeのソースコード</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-1-f8crowdsimplugin">4-1 F8CrowdSimPlugin</h3>
+<p>ソースファイルからF8CrowdSimPluginを生成することができます. <br>
+ソースコードは<a href="https://www.mlit.go.jp/plateau/news/">GitHub</a>からダウンロードしたフォルダに含まれるsrcフォルダ内のF8CrowdSimPluginフォルダにあります. <br>
+フォルダ構成は次のようになっています.</p>
+<pre><code class="lang-bash">├─Importer
+│  ├─CityGML
+│  ├─MFJSON
+│  └─TrafficSensor
+├─PeopleFlowAnalysis
+│  ├─Contour
+│  ├─ExportsForm
+│  ├─FlowLog
+│  └─HeatMap
+├─PeopleFlowSimulation
+│  ├─Menge
+│  │  ├─MengeUtils
+│  │  └─XmlFormats
+│  └─PedestrianMap
+│      └─PedestrianMapUtil
+└─PlayerForm
+    ├─imgs
+    └─PlayerFormFrame
+</code></pre>
+<p>ビルド方法は次のとおりです.</p>
+<ol>
+<li>UC-win/Road SDKのヘルプファイルに従って開発環境の初期設定を行います.</li>
+<li>本システムのプロジェクトファイル（F8CrowdSimPlugin. dproj）をDelphi 10. 4. 2で開きます.</li>
+<li>プラグインの出力先を確認します.
+<ol>
+<li>プロジェクト画面で「F8CrowdSimPlugin. bpl」を右クリックし, 「オプション」を選択します.</li>
+<li>「ビルド」-「Delphiコンパイラ」を開きます.</li>
+<li>「ターゲット」を「すべての構成 - Windows64ビット プラットフォーム」に変更します.</li>
+<li>「パッケージの出力ディレクトリ」が「(UC-wi/Roadのデータディレクトリ)\Plugins」になってない場合は変更して下さい. <img src="../resources/devMan/delphiProjectOption.png" alt="Delphiプロジェクトオプション"></li>
+</ol>
+</li>
+<li>ビルド構成を「Release」,  ターゲットプラットフォームを「Windows 64ビット」にしてビルドします.<img src="../resources/devMan/BuildSettings_Plugin.png" alt="F8CrowdSimPluginビルド時の構成"></li>
+<li>ビルドに成功すると, 前項で確認した「パッケージの出力ディレクトリ」の場所に「F8CrowdSim. bpl」が出力されます.</li>
+</ol>
+<h3 id="4-2-crowdsim">4-2 CrowdSim</h3>
+<p>ソースファイルからCrowdSimを生成することができます. <br>
+ソースコードは<a href="https://www.mlit.go.jp/plateau/news/">GitHub</a>からダウンロードしたフォルダに含まれるsrcフォルダ内のCrowdSimフォルダにあります. <br>
+フォルダ構成は次のようになっています.</p>
+<pre><code class="lang-bash">├─data
+├─util
+</code></pre>
+<p>ビルド方法は次のとおりです.</p>
+<ol>
+<li>本システムのプロジェクトファイル（CrowdSim. dproj）をDelphi 10. 4. 2で開きます.</li>
+<li>ビルド構成を「Release」,  ターゲットプラットフォームを「Windows64ビット」にしてビルドします.<img src="../resources/devMan/BuildSettings_FrowdSim.png" alt="CrowdSimビルド時の構成"></li>
+</ol>
+<p>次に, ビルドしたCrowdSimを使用できるようセットアップします.<br>セットアップ方法は次の通りです.</p>
+<ol>
+<li>ビルドに成功すると, CrowdSimフォルダにWin64\Releaseフォルダが自動生成されるので、フォルダ内に移動します.</li>
+<li>フォルダにある「CrowdSim. exe」と「MengeCore. dll」を, UC-win/Roadの実行ファイル(UCwinRoad. exe)があるフォルダにコピーします。</li>
+</ol>
+<h2 id="5-準備物一覧">5 準備物一覧</h2>
+<p>アプリケーションを利用するために以下のデータを入手します. <br>
+データの入力方法については操作マニュアルをご参照下さい.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>データ種別</th>
+<th>機能</th>
+<th>用途</th>
+<th>入力方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>3D都市モデル(CityGML)<br><a href="https://front.geospatial.jp/">G空間情報センター</a>から取得します.</td>
+<td>全般</td>
+<td>全般</td>
+<td>格納フォルダパス指定</td>
+</tr>
+<tr>
+<td>2</td>
+<td>標準人流データ(MF-Json)<br><a href="https://www.mlit.go.jp/plateau/news/">人流データ変換ツール</a>を使って作成します.</td>
+<td>3次元形状の物体の移動データ</td>
+<td>人流シミュレーションの初期値</td>
+<td>格納フォルダパス指定</td>
+</tr>
+</tbody>
+</table>
+<p>本システムでは, 3D都市モデルの道路モデルの形状（LOD1, LOD3）を活用します.
+また, 歩行エリア編集時の参考情報として建築物の形状も利用しています.</p>
+<table>
+<thead>
+<tr>
+<th>地物</th>
+<th>地物型</th>
+<th>属性区分</th>
+<th>属性名</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>建築物LOD1</td>
+<td>bldg:Building</td>
+<td>空間属性</td>
+<td>bldg:lod1Solid</td>
+<td>建築物のLOD1の立体</td>
+</tr>
+<tr>
+<td>建築物LOD2</td>
+<td>bldg:Building</td>
+<td>空間属性</td>
+<td>bldg:lod2Solid</td>
+<td>建築物のLOD2の立体</td>
+</tr>
+<tr>
+<td>道路LOD1</td>
+<td>tran:Road</td>
+<td>空間属性</td>
+<td>tran:lod1MultiSurface</td>
+<td>道路のLOD1の形状</td>
+</tr>
+<tr>
+<td>道路LOD3. 3</td>
+<td>tran:Road</td>
+<td>空間属性</td>
+<td>tran:lod3MultiSurface</td>
+<td>道路のLOD3の形状</td>
+</tr>
+</tbody>
+</table>
+<!---GitHubページなどは確定次第修正します-->
+<!--URL-->
+<!--画像-->
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

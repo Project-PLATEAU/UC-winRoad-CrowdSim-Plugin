@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>操作マニュアル </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="操作マニュアル ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="操作マニュアル">操作マニュアル</h1>
+
+<h1 id="1-本書について">1 本書について</h1>
+<p>本書では、人流シミュレーションプラグイン（UC-win/Roadプラグイン）（以下「本システム」という。）の操作手順について記載しています。</p>
+<h1 id="2-使い方">2 使い方</h1>
+<h2 id="2-1-プロジェクト読み込み画面">2-1 プロジェクト読み込み画面</h2>
+<p>ファイル「UCwinRoad.exe」を実行すると以下の画面が表示されます。</p>
+<p>① デフォルトのデータで新規プロジェクト（※）を作成し、読み込みます。</p>
+<p>② クリックするとファイルダイアログが表示され、ダイアログ内で選択された既存のプロジェクトを読み込みます。</p>
+<p>③ 地形データや地理院タイルをもとに新規プロジェクトを作成し、読み込みます。</p>
+<p>④ 「UCwinRoad.exe」内のブラウザから任意のプロジェクトをダウンロードし、読み込みます。</p>
+<p><img src="../resources/userMan/UCwinRoadStart.png" alt=""></p>
+<p>（※）プロジェクトとは、拡張子が「.rd」のファイルのことをいいます。</p>
+<h2 id="2-2-mf-json読み込み画面">2-2 MF-JSON読み込み画面</h2>
+<p>プロジェクトを読み込むと以下の画面（以下「UCwinRoadメイン画面」という。）が表示されます。</p>
+<p><img src="../resources/userMan/UCwinRoadMain.png" alt=""></p>
+<p>UCwinRoadメイン画面上部の「ファイル」タブ&gt;&gt;「インポート」&gt;&gt;「Import MF-Json...」をクリックすると以下の画面が表示されます。</p>
+<p>① インポートするファイル</p>
+<p>・追加したMF-JSONのファイル名が一覧で表示されます。ファイル名をクリックすると、そのMF-JSONを選択している状態になります。</p>
+<p>② デフォルトモデル</p>
+<p>・クリックすると、MF-JSONから取得した人物データ（以下「AGENT」という。）に割り当てる3Dキャラクターモデルを選択できます。</p>
+<p>③ 詳細設定</p>
+<p>・「+」ボタンをクリックすると画面が変化し、AGENTに性・年齢データが含まれていた場合や、シミュレーションの天候を雨に設定した場合に割り当てる3Dキャラクターモデルを選択できます。</p>
+<p>・画面が変化している状態で「-」ボタンをクリックすると、元の表示に戻ります。</p>
+<p>④ 追加</p>
+<p>・クリックするとファイルダイアログが表示され、ダイアログ内で選択されたMF-JSONを追加します。</p>
+<p>⑤ 削除</p>
+<p>・クリックすると、①で選択中のMF-JSONを削除します。</p>
+<p>⑥ インポート</p>
+<p>・クリックすると、MF-JSONを読み込みます。読み込み完了後、自動的にMF-JSON読み込み画面を閉じます。</p>
+<p><img src="../resources/userMan/MF-JsonLoader.png" alt=""></p>
+<h2 id="2-3-citygml読み込み画面">2-3 CityGML読み込み画面</h2>
+<p>UCwinRoadメイン画面上部の「ファイル」タブ&gt;&gt;「インポート」&gt;&gt;「CityGMLファイルのインポート」をクリックすると以下の画面が表示されます。</p>
+<p>① インポートするファイル</p>
+<p>・追加したCityGMLが一覧で表示されます。</p>
+<p>② すべて選択</p>
+<p>・クリックすると、追加したCityGMLをすべて選択します。</p>
+<p>③ ファイルを追加</p>
+<p>・クリックするとファイルダイアログが表示され、ダイアログ内で選択されたCityGMLを追加します。</p>
+<p>④ オプション設定</p>
+<p>・CityGML読み込み時の設定を行います。</p>
+<p>⑤ インポート</p>
+<p>・クリックすると、CityGMLを読み込みます。読み込み完了後、自動的にCityGML読み込み画面を閉じます。</p>
+<p>⑥ 閉じる</p>
+<p>・クリックすると、CityGMLを読み込まずにCityGML読み込み画面を閉じます。</p>
+<p>⑦ ヘルプ</p>
+<p>・クリックすると、CityGML読み込み画面に関するヘルプが表示されます。</p>
+<p><img src="../resources/userMan/CityGMLLoader.png" alt=""></p>
+<h2 id="2-4-人流シミュレーション設定画面">2-4 人流シミュレーション設定画面</h2>
+<p>MF-JSON読み込み後にUCwinRoadメイン画面の「CrowdSim」タブ&gt;&gt;「Crowd Sim Player...」ボタンをクリックすると、以下の画面が表示されます。</p>
+<p>① 「地域設定」タブ</p>
+<p>・クリックすると、地域設定画面が表示されます。</p>
+<p>② 「AGENT情報」タブ</p>
+<p>・クリックすると、AGENT情報画面が表示されます。</p>
+<p>③ 「シミュレーション集計設定」タブ</p>
+<p>・クリックすると、シミュレーション集計設定画面が表示されます。</p>
+<p>④ 「シミュレーション設定」タブ</p>
+<p>・クリックすると、シミュレーション設定画面が表示されます。</p>
+<p><img src="../resources/userMan/CrowdSimPlayer_01.png" alt=""></p>
+<h2 id="2-4-1-地域設定画面">2-4-1 地域設定画面</h2>
+<p>シミュレーションを実施する領域（以下「メッシュ」という。）の生成・編集を行う画面です。</p>
+<p>① 表示オプション</p>
+<p>・UCwinRoadメイン画面の表示に関する設定を行います。</p>
+<p>② メッシュを新規生成する</p>
+<p>・クリックすると、メッシュ新規生成画面が表示されます。</p>
+<p>③ メッシュの歩行エリアを編集する</p>
+<p>・クリックすると、歩行エリア編集画面が表示されます。</p>
+<p><img src="../resources/userMan/AreaSettings01.png" alt=""></p>
+<h3 id="2-4-1-1-メッシュ新規生成画面">2-4-1-1 メッシュ新規生成画面</h3>
+<p>メッシュの生成を行う画面です。</p>
+<p>① 原点を編集する</p>
+<p>・クリックすると、メッシュの原点を選択するモードに移行します。この状態でUCwinRoadメイン画面の地形をクリックすると、クリックした地点をメッシュの原点として設定します。</p>
+<p>② 範囲を編集する</p>
+<p>・クリックすると、メッシュの範囲を選択するモードに移行します。この状態でUCwinRoadメイン画面の地形をクリックすると、クリックした地点をメッシュの終点として設定します。</p>
+<p>③ マスの大きさ</p>
+<p>・入力された値に基づいて、メッシュを正方形のマス単位に分割します。値を小さくするほど精緻なシミュレーションを行うことができますが、シミュレーション計算にかかる時間が増加します。</p>
+<p>④ メッシュ生成実行</p>
+<p>・クリックすると、メッシュを生成します。生成されたメッシュは読み込んだCityGMLの属性（※）に基づいて、マスごとに歩行可能エリアと歩行不可エリアを分類します。</p>
+<p>・メッシュ生成完了後、自動的に歩行エリア編集画面が表示されます。</p>
+<p><img src="../resources/userMan/AreaSettings02.png" alt=""></p>
+<p>（※）<a href="https://www.mlit.go.jp/plateaudocument/#toc0_02">3D都市モデル標準製品仕様書 第4.1版</a>に準拠するCityGMLが対象となります。CityGMLの属性がLOD1の道路（tran:Road）である場合はモデルが指定する全域が、LOD3の道路（tran:Road）である場合はモデルが指定する通行可能な領域（tran:TrafficArea）が歩行可能エリアとなります。</p>
+<h3 id="2-4-1-2-歩行エリア編集画面歩行可能不可">2-4-1-2 歩行エリア編集画面（歩行可能/不可）</h3>
+<p>メッシュの歩行エリアについて、歩行可能・歩行不可を編集する画面です。歩行エリア編集画面&gt;&gt;「歩行可能領域の編集」タブをクリックすると表示されます。</p>
+<p>① クリックした地点を歩行可能とする</p>
+<p>・選択されている状態でUCwinRoadメイン画面の地形をクリックすると、クリックした地点のマスを歩行可能エリアとして設定します。</p>
+<p>② クリックした地点を歩行不可とする</p>
+<p>・選択されている状態でUCwinRoadメイン画面の地形をクリックすると、クリックした地点のマスを歩行不可エリアとして設定します。</p>
+<p>③ 選択サイズ</p>
+<p>・クリックした地点を中心とし、表示されている値に基づいた範囲のマスをまとめて編集します。スライダーを動かすことで値を変更することができます。</p>
+<p><img src="../resources/userMan/AreaSettings03.png" alt=""></p>
+<h3 id="2-4-1-3-歩行エリア編集画面横断歩道">2-4-1-3 歩行エリア編集画面（横断歩道）</h3>
+<p>メッシュの歩行エリアについて、横断歩道に関する編集を行う画面です。歩行エリア編集画面&gt;&gt;「横断歩道の編集」タブをクリックすると表示されます。</p>
+<p>① 信号切替間隔</p>
+<p>・入力されている秒数に基づいて、シミュレーション内で横断歩道の信号が切り替わります。</p>
+<p>② 追加</p>
+<p>・クリックすると、新しく横断歩道を追加します。</p>
+<p>③ 削除</p>
+<p>・クリックすると、④で選択中の横断歩道を削除します。</p>
+<p>④ 横断歩道の一覧</p>
+<p>・追加した横断歩道の名前が一覧で表示されます。横断歩道名をクリックすると、その横断歩道を選択している状態になります。</p>
+<p>⑤ 青信号</p>
+<p>・クリックすると、選択中の横断歩道を青信号から始まる（※）横断歩道として設定します。</p>
+<p>⑥ 赤信号</p>
+<p>・クリックすると、選択中の横断歩道を赤信号から始まる（※）横断歩道として設定します。</p>
+<p>⑦ 選択領域を追加する</p>
+<p>・選択されている状態でUCwinRoadメイン画面の地形をクリックすると、クリックした地点のマスを横断歩道として設定します。</p>
+<p>⑧ 選択領域を除外する</p>
+<p>・選択されている状態でUCwinRoadメイン画面の地形をクリックすると、クリックした地点のマスが横断歩道であった場合にそのマスを通常の歩行可能エリア・歩行不可エリアに戻します。</p>
+<p>⑨ 選択サイズ</p>
+<p>・クリックした地点を中心とし、表示されている値に基づいた範囲のマスをまとめて編集します。スライダーを動かすことで値を変更することができます。</p>
+<p><img src="../resources/userMan/AreaSettings04.png" alt=""></p>
+<p>（※）シミュレーション開始時刻における信号状態のことをいいます。</p>
+<h2 id="2-4-2-agent情報画面">2-4-2 AGENT情報画面</h2>
+<p>AGENTに関する情報の表示と設定を行う画面です。</p>
+<p>① AGENT情報のページ</p>
+<p>・AGENT情報を一覧で表示している現在のページ番号と総ページ数が表示されます。</p>
+<p>② AGENT情報</p>
+<p>・AGENTのモデル、接続（シミュレーション計算の対象とするかどうか）、始点および終点の緯度・経度が表示されます。1ページあたり最大100人分の情報が表示されます。</p>
+<p>③ 詳細設定</p>
+<p>・クリックすると、シミュレーション計算に用いるAGENTのパラメータ（※）を設定する画面が表示されます。</p>
+<p><img src="../resources/userMan/AgentSetting.png" alt=""></p>
+<p>（※）パラメータのうち「拡大係数」を有効にすると、入力された内容に応じてシミュレーション内での人流が本来の人流よりも多くなります。拡大係数を大きくするほどシミュレーション計算にかかる時間が増加します。</p>
+<h2 id="2-4-3-シミュレーション集計設定画面">2-4-3 シミュレーション集計設定画面</h2>
+<p>人流シミュレーションのログデータ集計に関する設定を行う画面です。</p>
+<p>① 通過データ集計間隔</p>
+<p>・入力された値に応じて、メッシュのマスごとの通過人数を集計する間隔が変化します。</p>
+<p>・マスごとの通過人数の集計結果は、ヒートマップ・コンターの生成に使用されます。</p>
+<p>② ログ出力間隔</p>
+<p>・入力された値に応じて、設定した断面交通流計測範囲の通過人数を集計する間隔が変化します。</p>
+<p>・断面交通流計測範囲の通過人数の集計結果は、シミュレーション停止時にデータディレクトリ下の「Log」フォルダに出力されます。データディレクトリはUCwinRoadメイン画面上部の「ファイル」タブ&gt;&gt;「アプリケーション オプション」&gt;&gt;「デフォルト設定」から確認することができます。</p>
+<p>③ 計測範囲左上を選択</p>
+<p>・クリックすると、断面交通流計測範囲の左上（※）を選択するモードに移行します。この状態でUCwinRoadメイン画面の地形をクリックすると、クリックした地点を断面交通流計測範囲の左上座標として設定します。</p>
+<p>④ 計測範囲左上を選択</p>
+<p>・クリックすると、断面交通流計測範囲の右下（※）を選択するモードに移行します。この状態でUCwinRoadメイン画面の地形をクリックすると、クリックした地点を断面交通流計測範囲の右下座標として設定します。</p>
+<p>⑤ 計測範囲名</p>
+<p>・入力された内容を断面交通流計測範囲の名前として設定します。</p>
+<p>⑥ 計測範囲を追加</p>
+<p>・クリックすると、③～⑤で選択・入力された内容に基づいて断面交通流計測範囲を追加します。</p>
+<p>⑦ 計測範囲確認</p>
+<p>・クリックすると、追加した断面交通流計測範囲の名前が一覧で表示されます。そこから計測範囲名を選択すると、選択した計測範囲がUCwinRoadメイン画面上で強調表示されます。</p>
+<p>⑧ 選択中の計測範囲を削除</p>
+<p>・クリックすると、⑦で選択した計測範囲を削除します。</p>
+<p>⑨ 計測範囲の一覧</p>
+<p>・追加した計測範囲に関する情報が一覧で表示されます。</p>
+<p><img src="../resources/userMan/SimulationLogSetting.png" alt=""></p>
+<p>（※）断面交通流計測範囲の左上・右下は南からの視点が基準となります。</p>
+<h2 id="2-4-4-シミュレーション設定画面">2-4-4 シミュレーション設定画面</h2>
+<p>人流シミュレーションの計算に関する設定を行う画面です。</p>
+<p>① シミュレーション計算時刻</p>
+<p>・入力された開始時刻から終了時刻までのシミュレーションを計算します。</p>
+<p>② 天候</p>
+<p>・選択された天候下でのシミュレーションを計算します。</p>
+<p>③ 出力ディレクトリ、出力ファイル名</p>
+<p>・入力されたフォルダのパスとファイル名に基づいて、シミュレーション計算結果のMF-JSONを出力します。</p>
+<p>④ AGENT座標出力間隔</p>
+<p>・MF-JSONを出力する際に、計算された各AGENTの座標を入力された秒数ごとに出力します。0秒とした場合は全て（0.1秒ごと）の座標を出力します。</p>
+<p>⑤ 計算結果をもとにMF-JSONを出力</p>
+<p>・シミュレーション計算完了後にクリックすると、計算結果を汎用フォーマット人流データのMF-JSONとして出力します。</p>
+<p>⑥ 詳細設定</p>
+<p>・クリックすると、シミュレーション計算の通信に関する設定を行う画面が表示されます。</p>
+<p>⑦ 計算</p>
+<p>・クリックすると、シミュレーション計算実行ソフト「CrowdSim.exe（※1）」を自動的に起動してシミュレーション計算（※2）を行います。</p>
+<p><img src="../resources/userMan/SimulationSetting.png" alt=""></p>
+<p>（※1）「CrowdSim.exe」が起動すると以下の画面が表示されます。</p>
+<p><img src="../resources/userMan/Simulator.png" alt=""></p>
+<p>（※2）シミュレーション計算中は以下の画面が表示されます。「計算が終了しました。」というメッセージが表示されると計算完了となります。</p>
+<p><img src="../resources/userMan/SimCalcProgress.png" alt=""></p>
+<h2 id="2-4-5-シミュレーション再生画面">2-4-5 シミュレーション再生画面</h2>
+<p>シミュレーション計算完了後、人流シミュレーション設定画面上部のボタンから計算したシミュレーションを再生することができます。</p>
+<p>① 再生ボタン</p>
+<p>・クリックすると、UCwinRoadメイン画面上でシミュレーションを再生します。</p>
+<p>② 再生速度</p>
+<p>・入力された値に応じて、巻き戻し・早送り時のシミュレーションの再生速度が変化します。</p>
+<p>③ 巻き戻しボタン</p>
+<p>・クリックすると、シミュレーションを巻き戻します。巻き戻し中に再度クリックすると、巻き戻しを終了します。</p>
+<p>④ 早送りボタン</p>
+<p>・クリックすると、シミュレーションを早送りします。早送り中に再度クリックすると、早送りを終了します。</p>
+<p>⑤ 一時停止ボタン</p>
+<p>・クリックすると、シミュレーションを一時停止します。一時停止中に再度クリックすると、一時停止を解除します。</p>
+<p>⑥ 停止ボタン</p>
+<p>・クリックすると、シミュレーションを停止します。シミュレーション再生中にクリックすると、停止後に出力データ選択画面が表示されます。</p>
+<p>⑦ シミュレーション日時</p>
+<p>・入力された日時からシミュレーションが開始されます。</p>
+<p><img src="../resources/userMan/SimulationController.png" alt=""></p>
+<h2 id="2-4-6-出力データ選択画面">2-4-6 出力データ選択画面</h2>
+<p>再生中のシミュレーションを停止すると、以下の画面が表示されます。</p>
+<p>① 「断面交通流解析結果」タブ</p>
+<p>・クリックすると、断面交通流解析結果画面が表示されます。</p>
+<p>② 「ヒートマップ生成」タブ</p>
+<p>・クリックすると、ヒートマップ生成画面が表示されます。</p>
+<p>③ 「コンター生成」タブ</p>
+<p>・クリックすると、コンター生成画面が表示されます。</p>
+<p><img src="../resources/userMan/ResultExporter.png" alt=""></p>
+<h3 id="2-4-6-1-断面交通流解析結果画面">2-4-6-1 断面交通流解析結果画面</h3>
+<p>シミュレーション再生中に各断面交通流計測範囲を通過した人数が折れ線グラフで表示されます。縦軸は人数、横軸はシミュレーション経過時間となります。</p>
+<p>「解析結果を画像として保存する」をクリックするとファイルダイアログが表示され、解析結果のグラフを画像データとしてダイアログ内で選択されたフォルダに出力します。</p>
+<p><img src="../resources/userMan/GraphResult.png" alt=""></p>
+<h3 id="2-4-6-2-ヒートマップ生成画面">2-4-6-2 ヒートマップ生成画面</h3>
+<p>① ヒートマップを生成するシミュレーション区間</p>
+<p>・入力されたシミュレーション区間の人流がヒートマップとして生成されます。シミュレーション集計設定画面で入力された通過データ集計間隔が指定できる区間の最低分解能となります。</p>
+<p>② ヒートマップを生成する</p>
+<p>・クリックすると、ヒートマップ生成結果画面が表示されます。</p>
+<p><img src="../resources/userMan/HeatMapGenerator.png" alt=""></p>
+<p>ヒートマップ生成結果画面では、指定されたシミュレーション区間の人流のヒートマップが表示されます。</p>
+<p>「画像として保存する」をクリックするとファイルダイアログが表示され、生成されたヒートマップと凡例を画像データとしてダイアログ内で選択されたフォルダに出力します。</p>
+<p><img src="../resources/userMan/HeatMapResult.png" alt=""></p>
+<h3 id="2-4-6-3-コンター生成画面">2-4-6-3 コンター生成画面</h3>
+<p>① コンターを生成するシミュレーション区間</p>
+<p>・入力されたシミュレーション区間の人流がコンターとして生成されます。シミュレーション集計設定画面で入力された通過データ集計間隔が指定できる区間の最低分解能となります。</p>
+<p>② コンターを生成する</p>
+<p>・クリックすると、コンター生成結果画面が表示されます。</p>
+<p><img src="../resources/userMan/ContourGenerator.png" alt=""></p>
+<p>コンター生成結果画面では、指定されたシミュレーション区間の人流のコンターが表示されます。</p>
+<p>「画像として保存する」をクリックするとファイルダイアログが表示され、生成されたコンターと凡例を画像データとしてダイアログ内で選択されたフォルダに出力します。</p>
+<p><img src="../resources/userMan/ContourResult.png" alt=""></p>
+<h1 id="3-出力データ">3 出力データ</h1>
+<p>本システムで出力されるデータは以下のとおりです。</p>
+<table>
+<thead>
+<tr>
+<th>出力データ</th>
+<th>内容</th>
+<th>データ形式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>断面交通流ログ</td>
+<td>断面交通流計測範囲名、シミュレーション経過時間、シミュレーション時刻、計測範囲（緯度・経度）およびその座標、通過人数を記載したデータ。</td>
+<td>CSV</td>
+</tr>
+<tr>
+<td>シミュレーション計算結果の人流データ</td>
+<td>シミュレーション計算結果を汎用フォーマット人流データに変換したデータ。</td>
+<td>JSON</td>
+</tr>
+<tr>
+<td>断面交通流解析結果</td>
+<td>断面交通流計測範囲の通過人数を折れ線グラフで記録した画像データ。</td>
+<td>PNG、JPEG、BMP</td>
+</tr>
+<tr>
+<td>ヒートマップ</td>
+<td>メッシュのマスごとの通過人数をヒートマップで記録した画像データ。</td>
+<td>PNG、JPEG、BMP</td>
+</tr>
+<tr>
+<td>コンター</td>
+<td>メッシュのマスごとの通過人数をコンターで記録した画像データ。</td>
+<td>PNG、JPEG、BMP</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-1-断面交通流ログ">3-1 断面交通流ログ</h2>
+<p>シミュレーション集計設定画面で追加した断面交通流計測範囲ごとに、計測範囲名、シミュレーション経過時間、シミュレーション時刻、計測範囲（緯度・経度）およびその座標、通過人数がCSV形式で出力されます。</p>
+<p><img src="../resources/userMan/CrossSectionLog.png" alt=""></p>
+<h2 id="3-2-シミュレーション計算結果の人流データ">3-2 シミュレーション計算結果の人流データ</h2>
+<p>シミュレーション設定画面より、人流シミュレーションの計算結果が汎用フォーマット人流データ（JSON形式）で出力されます。</p>
+<p>出力されたJSONファイルは<a href="https://crowd-simulation.f8vps.jp/#/scene/expt">人流可視化ツール</a>での利用が可能です。</p>
+<p><img src="../resources/userMan/OutputMFJSON.png" alt=""></p>
+<h2 id="3-3-断面交通流解析結果">3-3 断面交通流解析結果</h2>
+<p>断面交通流解析結果画面より、断面交通流解析結果のグラフが画像（PNG、JPEG、BMP形式）で出力されます。</p>
+<p><img src="../resources/userMan/Graph.png" alt=""></p>
+<h2 id="3-4-ヒートマップ">3-4 ヒートマップ</h2>
+<p>ヒートマップ生成結果結果画面より、ヒートマップとその凡例が画像（PNG、JPEG、BMP形式）で出力されます。</p>
+<p><img src="../resources/userMan/HeatMap.png" alt=""></p>
+<h2 id="3-5-コンター">3-5 コンター</h2>
+<p>コンター生成結果画面より、コンターとその凡例が画像（PNG、JPEG、BMP形式）で出力されます。</p>
+<p><img src="../resources/userMan/Contour.png" alt=""></p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

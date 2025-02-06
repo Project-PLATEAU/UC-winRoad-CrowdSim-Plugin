@@ -1,0 +1,405 @@
+{
+  "source_base_path": "D:/Mercurial/R6_Plateau_menge_crowdsim/GitHubPages/F8CrowdSimPlugin/markdown",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/devMan.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/devMan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/userMan.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/userMan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/CrowdSimulatorPlugin.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/CrowdSimulatorPlugin.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/devMan/BuildSettings_FrowdSim.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/devMan/BuildSettings_FrowdSim.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/devMan/BuildSettings_Plugin.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/devMan/BuildSettings_Plugin.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/devMan/applicationDefaultForm.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/devMan/applicationDefaultForm.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/devMan/delphiProjectOption.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/devMan/delphiProjectOption.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/AgentSetting.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/AgentSetting.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/AreaSettings01.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/AreaSettings01.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/AreaSettings02.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/AreaSettings02.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/AreaSettings03.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/AreaSettings03.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/AreaSettings04.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/AreaSettings04.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/CityGMLLoader.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/CityGMLLoader.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/Contour.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/Contour.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/ContourGenerator.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/ContourGenerator.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/ContourResult.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/ContourResult.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/CrossSectionLog.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/CrossSectionLog.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/CrowdSimPlayer_01.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/CrowdSimPlayer_01.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/Graph.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/Graph.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/GraphResult.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/GraphResult.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/HeatMap.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/HeatMap.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/HeatMapGenerator.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/HeatMapGenerator.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/HeatMapResult.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/HeatMapResult.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/MF-JsonLoader.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/MF-JsonLoader.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/OutputMFJSON.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/OutputMFJSON.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/ResultExporter.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/ResultExporter.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/SimCalcProgress.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/SimCalcProgress.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/SimulationController.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/SimulationController.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/SimulationDetailSetting.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/SimulationDetailSetting.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/SimulationLogSetting.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/SimulationLogSetting.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/SimulationSetting.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/SimulationSetting.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/Simulator.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/Simulator.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/UCwinRoadMain.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/UCwinRoadMain.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/UCwinRoadStart.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/UCwinRoadStart.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
