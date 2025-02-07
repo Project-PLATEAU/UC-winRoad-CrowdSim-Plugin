@@ -1,0 +1,133 @@
+package F8CrowdSimPlugin;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  inet,
+  rtl,
+  vcl,
+  vclx,
+  vclactnband,
+  vclSmp,
+  xmlrtl,
+  IndyCore,
+  IndyProtocols,
+  IndySystem,
+  F8Core,
+  F8PluginControls,
+  F8PluginCore,
+  F8SAX,
+  Forum8,
+  GR32_RSXE2,
+  UFbxPackage,
+  tee;
+
+contains
+  F8CrowdSimPluginMain in 'F8CrowdSimPluginMain.pas',
+  MengeAgent in 'PeopleFlowSimulation\Menge\MengeAgent.pas',
+  MengeBehaviorXML in 'PeopleFlowSimulation\Menge\MengeBehaviorXML.pas',
+  MengeCommunicator in 'PeopleFlowSimulation\Menge\MengeCommunicator.pas',
+  MengeSceneXML in 'PeopleFlowSimulation\Menge\MengeSceneXML.pas',
+  MengeViewXML in 'PeopleFlowSimulation\Menge\MengeViewXML.pas',
+  MengeXml in 'PeopleFlowSimulation\Menge\MengeXml.pas',
+  AgentDetailSettingForm in 'PeopleFlowSimulation\Menge\AgentDetailSettingForm.pas' {FormAgentDetailSetting},
+  MenngeCommunicateSettingForm in 'PeopleFlowSimulation\Menge\MenngeCommunicateSettingForm.pas' {FormMengeCommunicateSetting},
+  MFProgressForm in 'PeopleFlowSimulation\Menge\MFProgressForm.pas' {FormProgress},
+  AgentSettings in 'PeopleFlowSimulation\Menge\MengeUtils\AgentSettings.pas',
+  mengeSimSetting in 'PeopleFlowSimulation\Menge\MengeUtils\mengeSimSetting.pas',
+  XmlExporter in 'PeopleFlowSimulation\Menge\MengeUtils\XmlExporter.pas',
+  xmlExportHelper in 'PeopleFlowSimulation\Menge\MengeUtils\xmlExportHelper.pas',
+  MengeActionDefinitions in 'PeopleFlowSimulation\Menge\XmlFormats\MengeActionDefinitions.pas',
+  MengeAgentDefinitions in 'PeopleFlowSimulation\Menge\XmlFormats\MengeAgentDefinitions.pas',
+  MengeConditionDefinitions in 'PeopleFlowSimulation\Menge\XmlFormats\MengeConditionDefinitions.pas',
+  MengeEventDefinitions in 'PeopleFlowSimulation\Menge\XmlFormats\MengeEventDefinitions.pas',
+  MengeExperimentDefinitions in 'PeopleFlowSimulation\Menge\XmlFormats\MengeExperimentDefinitions.pas',
+  MengeGeneratorDefinitions in 'PeopleFlowSimulation\Menge\XmlFormats\MengeGeneratorDefinitions.pas',
+  MengeGoalDefinitions in 'PeopleFlowSimulation\Menge\XmlFormats\MengeGoalDefinitions.pas',
+  MengeStateDefinitions in 'PeopleFlowSimulation\Menge\XmlFormats\MengeStateDefinitions.pas',
+  MengeVelComponentDefinitions in 'PeopleFlowSimulation\Menge\XmlFormats\MengeVelComponentDefinitions.pas',
+  MapRenderer in 'PeopleFlowSimulation\PedestrianMap\MapRenderer.pas',
+  PedestrianCell in 'PeopleFlowSimulation\PedestrianMap\PedestrianCell.pas',
+  PedestrianCellGroup in 'PeopleFlowSimulation\PedestrianMap\PedestrianCellGroup.pas',
+  PedestrianCellGroup_Area in 'PeopleFlowSimulation\PedestrianMap\PedestrianCellGroup_Area.pas',
+  PedestrianCellGroup_CrossWalk in 'PeopleFlowSimulation\PedestrianMap\PedestrianCellGroup_CrossWalk.pas',
+  PedestrianMap in 'PeopleFlowSimulation\PedestrianMap\PedestrianMap.pas',
+  PedestrianMapEditingGuide in 'PeopleFlowSimulation\PedestrianMap\PedestrianMapEditingGuide.pas',
+  PedestrianMapEditor in 'PeopleFlowSimulation\PedestrianMap\PedestrianMapEditor.pas',
+  PedestrianMapGenerator in 'PeopleFlowSimulation\PedestrianMap\PedestrianMapGenerator.pas',
+  PedestrianMapList in 'PeopleFlowSimulation\PedestrianMap\PedestrianMapList.pas',
+  PedestrianMapPlaneRenderer in 'PeopleFlowSimulation\PedestrianMap\PedestrianMapPlaneRenderer.pas',
+  PedestrianMapUnificator in 'PeopleFlowSimulation\PedestrianMap\PedestrianMapUnificator.pas',
+  PedestrianMapUser in 'PeopleFlowSimulation\PedestrianMap\PedestrianMapUser.pas',
+  CrowdSimUDPClient in 'PeopleFlowSimulation\CrowdSimUDPClient.pas',
+  CrowdSimUtils in 'PeopleFlowSimulation\CrowdSimUtils.pas',
+  ContourDrawerForm in 'PeopleFlowAnalysis\Contour\ContourDrawerForm.pas' {FormDrawContour},
+  ContourGenerator in 'PeopleFlowAnalysis\Contour\ContourGenerator.pas',
+  HeatMapDrawerForm in 'PeopleFlowAnalysis\HeatMap\HeatMapDrawerForm.pas' {FormDrawHeatMap},
+  HeatMapGenerator in 'PeopleFlowAnalysis\HeatMap\HeatMapGenerator.pas',
+  CrowdSimLogExport in 'PeopleFlowAnalysis\FlowLog\CrowdSimLogExport.pas',
+  CrowdSimLogSensorAreaRenderer in 'PeopleFlowAnalysis\FlowLog\CrowdSimLogSensorAreaRenderer.pas',
+  CrowdSimLogUtils in 'PeopleFlowAnalysis\FlowLog\CrowdSimLogUtils.pas',
+  F8CrowdSimController in 'PlayerForm\F8CrowdSimController.pas',
+  CityGMLAfterImportEventEntry in 'Importer\CityGML\CityGMLAfterImportEventEntry.pas',
+  SurfaceMember in 'Importer\CityGML\SurfaceMember.pas',
+  TrafficArea in 'Importer\CityGML\TrafficArea.pas',
+  TranRoad in 'Importer\CityGML\TranRoad.pas',
+  TranRoadList in 'Importer\CityGML\TranRoadList.pas',
+  XMLPointType in 'Importer\CityGML\XMLPointType.pas',
+  F_MFJsonMultiLoader in 'Importer\MFJSON\F_MFJsonMultiLoader.pas' {FrameMfMultiLoader: TFrame},
+  MFJsonExportHelper in 'Importer\MFJSON\MFJsonExportHelper.pas',
+  MFJsonExportUtils in 'Importer\MFJSON\MFJsonExportUtils.pas',
+  MFJsonLoader in 'Importer\MFJSON\MFJsonLoader.pas',
+  MFJsonLoaderOptions in 'Importer\MFJSON\MFJsonLoaderOptions.pas',
+  MFJsonLoaderSettingForm in 'Importer\MFJSON\MFJsonLoaderSettingForm.pas' {FormMFJsonLoaderSetting},
+  MovingFeature in 'Importer\MFJSON\MovingFeature.pas',
+  TemporalProperty in 'Importer\MFJSON\TemporalProperty.pas',
+  SensorDataLoaderSettingForm in 'Importer\TrafficSensor\SensorDataLoaderSettingForm.pas' {FormSensorDataLoaderSetting},
+  TrafficSensor in 'Importer\TrafficSensor\TrafficSensor.pas',
+  TrafficSensorDat in 'Importer\TrafficSensor\TrafficSensorDat.pas',
+  TrafficSensorLoader in 'Importer\TrafficSensor\TrafficSensorLoader.pas',
+  AgentPacketData in 'PeopleFlowSimulation\Menge\MengeUtils\AgentPacketData.pas',
+  ComboDrawingHelper in 'PlayerForm\ComboDrawingHelper.pas',
+  F_CrossSectionLogSettings in 'PlayerForm\PlayerFormFrame\F_CrossSectionLogSettings.pas' {FrameCrossSectionLogSettings: TFrame},
+  F_SimulationAreaEditMesh in 'PlayerForm\PlayerFormFrame\F_SimulationAreaEditMesh.pas' {FrameSimulationAreaEditMesh: TFrame},
+  F_SimulationAreaSettings in 'PlayerForm\PlayerFormFrame\F_SimulationAreaSettings.pas' {FrameSimulationAreaSettings: TFrame},
+  F_TimeController in 'PlayerForm\PlayerFormFrame\F_TimeController.pas' {FrameControlTime: TFrame},
+  CrowdSimPlayerForm in 'PlayerForm\CrowdSimPlayerForm.pas' {FormCrowdSimPlayer},
+  CrowdSimExportsForm in 'PeopleFlowAnalysis\ExportsForm\CrowdSimExportsForm.pas' {FormCrowdSimExports},
+  F_ContourSettings in 'PeopleFlowAnalysis\ExportsForm\F_ContourSettings.pas' {FrameContourSettings: TFrame},
+  F_CrossSectionGraph in 'PeopleFlowAnalysis\ExportsForm\F_CrossSectionGraph.pas' {FrameCrossSectionGraph: TFrame},
+  F_HeatMapSettings in 'PeopleFlowAnalysis\ExportsForm\F_HeatMapSettings.pas' {FrameHeatMapSettings: TFrame},
+  CellID in 'PeopleFlowSimulation\PedestrianMap\PedestrianMapUtil\CellID.pas',
+  LatLonHelper in 'PeopleFlowSimulation\PedestrianMap\PedestrianMapUtil\LatLonHelper.pas',
+  MapOrigin in 'PeopleFlowSimulation\PedestrianMap\PedestrianMapUtil\MapOrigin.pas',
+  ParametricLine2DHelper in 'PeopleFlowSimulation\PedestrianMap\PedestrianMapUtil\ParametricLine2DHelper.pas',
+  PedestrianUtil in 'PeopleFlowSimulation\PedestrianMap\PedestrianMapUtil\PedestrianUtil.pas';
+
+end.
