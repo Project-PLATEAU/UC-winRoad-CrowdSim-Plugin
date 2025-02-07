@@ -1,5 +1,5 @@
 {
-  "source_base_path": "D:/Mercurial/R6_Plateau_menge_crowdsim/GitHubPages/F8CrowdSimPlugin/markdown",
+  "source_base_path": "D:/R6_Plateau/GitHubPages/F8CrowdSimPlugin/markdown",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -359,6 +359,36 @@
       "output": {
         "resource": {
           "relative_path": "resources/userMan/Simulator.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/TrafficSensorLoader01.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/TrafficSensorLoader01.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/TrafficSensorLoader02.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/TrafficSensorLoader02.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/TrafficSensorLoader03.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/TrafficSensorLoader03.png"
         }
       },
       "version": ""
