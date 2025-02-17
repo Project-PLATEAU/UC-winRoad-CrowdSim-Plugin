@@ -142,8 +142,8 @@
 </div>
 <h3 id="3-1-f8crowdsimplugin">3-1 F8CrowdSimPlugin</h3>
 <ol>
-<li><a href="https://www.mlit.go.jp/plateau/news/">GitHubページ</a>からF8CrowdSimPlugin.bplをダウンロードします。</li>
-<li><a href="https://www.mlit.go.jp/plateau/news/">GitHubページ</a>からソースファイルをダウンロードします。</li>
+<li><a href="https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin">GitHubページ</a>からF8CrowdSimPlugin.bplをダウンロードします。</li>
+<li><a href="https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin">GitHubページ</a>からソースファイルをダウンロードします。</li>
 <li>WindowsのエクスプローラでUC-win/Roadのデータディレクトリを開きます。
 <div class="TIP">
 <h5>Tip</h5>
@@ -162,7 +162,7 @@ UC-win/Roadを起動して、メイン画面上部の「ファイル」タブ&gt
 </ol>
 <h3 id="3-2-crowdsim">3-2 CrowdSim</h3>
 <ol>
-<li><a href="https://www.mlit.go.jp/plateau/news/">GitHubページ</a>からCrowdSim.exeをダウンロードします。</li>
+<li><a href="https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin">GitHubページ</a>からCrowdSim.exeをダウンロードします。</li>
 <li>WindowsのエクスプローラでUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダを開きます。</li>
 <li>前項で開いたフォルダに、ダウンロードしたCrowdSim.exeを設置します。</li>
 </ol>
@@ -178,7 +178,7 @@ UC-win/Roadを起動して、メイン画面上部の「ファイル」タブ&gt
 <p>F8CrowdSimPlugin、CrowdSimをビルドするにはDelphi 10.4.2が必要です。IDE Patchesは全て適用済みの状態にして下さい。</p>
 </div>
 <p>ソースファイルからF8CrowdSimPlugin、CrowdSimを生成することができます。<br>
-ソースファイルは<a href="https://www.mlit.go.jp/plateau/news/">こちら</a>からダウンロード可能です。<br>
+ソースファイルは<a href="https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin">こちら</a>からダウンロード可能です。<br>
 srcフォルダ下にF8CrowdSimPlugin、CrowdSimフォルダがあります。</p>
 <table>
 <thead>
@@ -200,7 +200,7 @@ srcフォルダ下にF8CrowdSimPlugin、CrowdSimフォルダがあります。</
 </table>
 <h3 id="4-1-f8crowdsimplugin">4-1 F8CrowdSimPlugin</h3>
 <p>ソースファイルからF8CrowdSimPluginを生成することができます。<br>
-ソースコードは<a href="https://www.mlit.go.jp/plateau/news/">GitHub</a>からダウンロードしたフォルダに含まれるsrcフォルダ内のF8CrowdSimPluginフォルダにあります。<br>
+ソースコードは<a href="https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin">GitHub</a>からダウンロードしたフォルダに含まれるsrcフォルダ内のF8CrowdSimPluginフォルダにあります。<br>
 フォルダ構成は次のようになっています。</p>
 <pre><code class="lang-bash">├─Importer
 │  ├─CityGML
@@ -243,7 +243,7 @@ srcフォルダ下にF8CrowdSimPlugin、CrowdSimフォルダがあります。</
 <p>Shadersフォルダ内のファイルを変更した場合は、インストール手順を参考にCrowdSimMeshフォルダを更新して下さい。</p>
 <h3 id="4-2-crowdsim">4-2 CrowdSim</h3>
 <p>ソースファイルからCrowdSimを生成することができます。<br>
-ソースコードは<a href="https://www.mlit.go.jp/plateau/news/">GitHub</a>からダウンロードしたフォルダに含まれるsrcフォルダ内のCrowdSimフォルダにあります。<br>
+ソースコードは<a href="https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin">GitHub</a>からダウンロードしたフォルダに含まれるsrcフォルダ内のCrowdSimフォルダにあります。<br>
 フォルダ構成は次のようになっています。</p>
 <pre><code class="lang-bash">├─data
 ├─util
@@ -256,7 +256,9 @@ srcフォルダ下にF8CrowdSimPlugin、CrowdSimフォルダがあります。</
 <p>次に、ビルドしたCrowdSimを使用できるようセットアップします。<br>セットアップ方法は次の通りです。</p>
 <ol>
 <li>ビルドに成功すると、CrowdSimフォルダにWin64\Releaseフォルダが自動生成されるので、フォルダ内に移動します。</li>
-<li>フォルダにある「CrowdSim.exe」と「MengeCore.dll」を、UC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダにコピーします。</li>
+<li>フォルダ内にある「CrowdSim.exe」をUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダにコピーします。</li>
+<li><a href="https://github.com/MengeCrowdSim/Menge">MengeのGitHubページ</a>からMengeのソースコードを取得し、同ページの記述に従ってビルドします。<br>ビルドすると、「MengeCore.dll」が生成されます。</li>
+<li>「MengeCore.dll」をUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダにコピーします。</li>
 </ol>
 <h2 id="5-準備物一覧">5 準備物一覧</h2>
 <p>アプリケーションを利用するために以下のデータを入手します。<br>
@@ -281,7 +283,7 @@ srcフォルダ下にF8CrowdSimPlugin、CrowdSimフォルダがあります。</
 </tr>
 <tr>
 <td>2</td>
-<td>標準人流データ(MF-Json)<br><a href="https://www.mlit.go.jp/plateau/news/">人流データ変換ツール</a>を使って作成します。</td>
+<td>標準人流データ(MF-Json)<br><a href="https://github.com/Project-PLATEAU/MF-JSON-Converter">人流データ変換ツール</a>を使って作成します。</td>
 <td>3次元形状の物体の移動データ</td>
 <td>人流シミュレーションの初期値</td>
 <td>格納フォルダパス指定</td>
