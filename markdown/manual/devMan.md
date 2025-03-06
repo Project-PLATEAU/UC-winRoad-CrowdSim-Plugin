@@ -38,9 +38,13 @@
     > UC-win/Roadを起動して、メイン画面上部の「ファイル」タブ>>「アプリケーションオプション」>>「デフォルト設定」を押下します。<br>
     > 「アプリケーションデフォルト」画面が開くので、画面左側のタブから「フォルダ、ファイル関連」を選択します。「データディレクトリ」項目に記載されている場所を確認します。<br>
     > ![アプリケーションデフォルト画面][ApplicationDefaultForm]
-4. データディレクトリ直下の「Plugins」フォルダを開きます(もし「Plugins」フォルダが無ければ作成してください)。
+4. データディレクトリ直下の「Plugins」フォルダを開きます(もし「Plugins」フォルダが無ければ作成してください)。![データディレクトリ_Plugins][DataDirectory_Plugins]
 5. 「Plugins」フォルダ直下にダウンロードしたF8CrowdSimPlugin.bplを設置します。
 6. WindowsのエクスプローラでUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダを開きます。
+    > [!TIP]
+    > UC-win/Roadをインストールすると、デフォルト設定ではデスクトップにショートカットが作成されます。<br>
+    > ショートカットを右クリックし、「ファイルの場所を開く」を選択するとUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダを開けます。<br>
+    > ![UCwinRoad_ショートカット][UCwinRoad_Shortcut]
 7. Shadersフォルダを開きます。
 8. Pluginsフォルダを開きます。
 9. ダウンロードしたソースファイルのsrc\F8CrowdSimPlugin\Shadersフォルダ内のCrowdSimMeshフォルダを前項のPluginsフォルダにコピーします。
@@ -50,6 +54,22 @@
 1. [GitHubページ][CrowdSimGitHub]からCrowdSim.exeをダウンロードします。
 2. WindowsのエクスプローラでUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダを開きます。
 3. 前項で開いたフォルダに、ダウンロードしたCrowdSim.exeを設置します。
+
+UC-win/Roadをデフォルト設定でインストールし、[3-1](#3-インストール手順)と[3-2](#3-2-crowdsim)を手順どおりに進めた場合、最終的にフォルダ構成は次のようになります。
+
+```bash
+C:
+├─Program Files
+│  └─FORUM8
+│      └─UCwinRoad 17.2 <------ UCwin/Roadの実行ファイルがあるフォルダ
+│          ├─CrowdSim.exe <------ ダウンロードしたexeを設置(3-2)
+│          └─shaders
+│              └─Plugins
+│                  └─CrowdSimMesh <------ ダウンロードしたフォルダを設置(3-1)
+└─UCwinRoad Data 17.2 <------ データディレクトリ
+│  └─Plugins
+│      └─F8CrowdSimPlugin.bpl <------ ダウンロードしたbplを設置(3-1)
+```
 
 ## 4 ビルド手順
 
@@ -134,7 +154,9 @@ Shadersフォルダ内のファイルを変更した場合は、インストー�
 次に、ビルドしたCrowdSimを使用できるようセットアップします。<br>セットアップ方法は次の通りです。
 
 1. ビルドに成功すると、CrowdSimフォルダにWin64\Releaseフォルダが自動生成されるので、フォルダ内に移動します。
-2. フォルダにある「CrowdSim.exe」と「MengeCore.dll」を、UC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダにコピーします。
+2. フォルダ内にある「CrowdSim.exe」をUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダにコピーします。
+3. [MengeのGitHubページ][MENGEGitHub]からMengeのソースコードを取得し、同ページの記述に従ってビルドします。<br>ビルドすると、「MengeCore.dll」が生成されます。
+4. 「MengeCore.dll」をUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダにコピーします。
 
 ## 5 準備物一覧
 
@@ -144,7 +166,7 @@ Shadersフォルダ内のファイルを変更した場合は、インストー�
 |# | データ種別 | 機能| 用途| 入力方法 |
 | - | - | - | - | - |
 | 1| 3D都市モデル(CityGML)<br>[G空間情報センター][geospatial]から取得します。| 全般| 全般| 格納フォルダパス指定|
-| 2 | 標準人流データ(MF-Json)<br>[人流データ変換ツール][MFJsonConverter]を使って作成します。| 3次元形状の物体の移動データ|人流シミュレーションの初期値|格納フォルダパス指定|
+| 2 | 人流データ(MF-Json)<br>[人流データ変換ツール][MFJsonConverter]を使って作成します。| 3次元形状の物体の移動データ|人流シミュレーションの初期値|格納フォルダパス指定|
 
 本システムでは、3D都市モデルの道路モデルの形状（LOD1、LOD3）を活用します。
 また、歩行エリア編集時の参考情報として建築物の形状も利用しています。
@@ -161,11 +183,14 @@ Shadersフォルダ内のファイルを変更した場合は、インストー�
 [TechnicalReport]: https://www.mlit.go.jp/plateau/news/
 [Forum8HP]: https://www.forum8.co.jp/index.html
 [Forum8Support]: https://www.forum8.co.jp/tech/tech.htm
-[CrowdSimGitHub]: https://www.mlit.go.jp/plateau/news/
+[CrowdSimGitHub]: https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin
 [geospatial]: https://front.geospatial.jp/
-[MFJsonConverter]: https://www.mlit.go.jp/plateau/news/
+[MFJsonConverter]: https://github.com/Project-PLATEAU/MF-JSON-Converter
+[MENGEGitHub]: https://github.com/MengeCrowdSim/Menge
 <!--画像-->
 [ApplicationDefaultForm]: ../resources/devMan/applicationDefaultForm.png
 [delphiProjectOptionForm]: ../resources/devMan/delphiProjectOption.png
 [buildSetting_F8CrowdSimPlugin]: ../resources/devMan/BuildSettings_Plugin.png
 [buildSetting_CrowdSim]: ../resources/devMan/BuildSettings_FrowdSim.png
+[DataDirectory_Plugins]: ../resources/devMan/RoadData_Plugins.png
+[UCwinRoad_Shortcut]: ../resources/devMan/UCwinRoad_shortcut.png

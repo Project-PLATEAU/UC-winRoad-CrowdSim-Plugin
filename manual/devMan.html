@@ -153,9 +153,16 @@ UC-win/Roadを起動して、メイン画面上部の「ファイル」タブ&gt
 <img src="../resources/devMan/applicationDefaultForm.png" alt="アプリケーションデフォルト画面"></p>
 </div>
 </li>
-<li>データディレクトリ直下の「Plugins」フォルダを開きます(もし「Plugins」フォルダが無ければ作成してください)。</li>
+<li>データディレクトリ直下の「Plugins」フォルダを開きます(もし「Plugins」フォルダが無ければ作成してください)。<img src="../resources/devMan/RoadData_Plugins.png" alt="データディレクトリ_Plugins"></li>
 <li>「Plugins」フォルダ直下にダウンロードしたF8CrowdSimPlugin.bplを設置します。</li>
-<li>WindowsのエクスプローラでUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダを開きます。</li>
+<li>WindowsのエクスプローラでUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダを開きます。
+<div class="TIP">
+<h5>Tip</h5>
+<p>UC-win/Roadをインストールすると、デフォルト設定ではデスクトップにショートカットが作成されます。<br>
+ショートカットを右クリックし、「ファイルの場所を開く」を選択するとUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダを開けます。<br>
+<img src="../resources/devMan/UCwinRoad_shortcut.png" alt="UCwinRoad_ショートカット"></p>
+</div>
+</li>
 <li>Shadersフォルダを開きます。</li>
 <li>Pluginsフォルダを開きます。</li>
 <li>ダウンロードしたソースファイルのsrc\F8CrowdSimPlugin\Shadersフォルダ内のCrowdSimMeshフォルダを前項のPluginsフォルダにコピーします。</li>
@@ -166,6 +173,19 @@ UC-win/Roadを起動して、メイン画面上部の「ファイル」タブ&gt
 <li>WindowsのエクスプローラでUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダを開きます。</li>
 <li>前項で開いたフォルダに、ダウンロードしたCrowdSim.exeを設置します。</li>
 </ol>
+<p>UC-win/Roadをデフォルト設定でインストールし、<a href="#3-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86">3-1</a>と<a href="#3-2-crowdsim">3-2</a>を手順どおりに進めた場合、最終的にフォルダ構成は次のようになります。</p>
+<pre><code class="lang-bash">C:
+├─Program Files
+│  └─FORUM8
+│      └─UCwinRoad 17.2 &lt;------ UCwin/Roadの実行ファイルがあるフォルダ
+│          ├─CrowdSim.exe &lt;------ ダウンロードしたexeを設置(3-2)
+│          └─shaders
+│              └─Plugins
+│                  └─CrowdSimMesh &lt;------ ダウンロードしたフォルダを設置(3-1)
+└─UCwinRoad Data 17.2 &lt;------ データディレクトリ
+│  └─Plugins
+│      └─F8CrowdSimPlugin.bpl &lt;------ ダウンロードしたbplを設置(3-1)
+</code></pre>
 <h2 id="4-ビルド手順">4 ビルド手順</h2>
 <div class="IMPORTANT">
 <h5>Important</h5>
@@ -283,7 +303,7 @@ srcフォルダ下にF8CrowdSimPlugin、CrowdSimフォルダがあります。</
 </tr>
 <tr>
 <td>2</td>
-<td>標準人流データ(MF-Json)<br><a href="https://github.com/Project-PLATEAU/MF-JSON-Converter">人流データ変換ツール</a>を使って作成します。</td>
+<td>人流データ(MF-Json)<br><a href="https://github.com/Project-PLATEAU/MF-JSON-Converter">人流データ変換ツール</a>を使って作成します。</td>
 <td>3次元形状の物体の移動データ</td>
 <td>人流シミュレーションの初期値</td>
 <td>格納フォルダパス指定</td>

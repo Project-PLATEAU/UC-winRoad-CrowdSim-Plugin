@@ -1,5 +1,5 @@
 {
-  "source_base_path": "D:/R6_Plateau/GitHubPages/F8CrowdSimPlugin/markdown",
+  "source_base_path": "D:/Mercurial/R6_Plateau_menge_crowdsim/GitHubPages/F8CrowdSimPlugin/markdown",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -79,6 +79,26 @@
       "output": {
         "resource": {
           "relative_path": "resources/devMan/BuildSettings_Plugin.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/devMan/RoadData_Plugins.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/devMan/RoadData_Plugins.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/devMan/UCwinRoad_shortcut.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/devMan/UCwinRoad_shortcut.png"
         }
       },
       "version": ""
