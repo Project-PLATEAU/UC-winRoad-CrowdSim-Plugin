@@ -2,7 +2,7 @@
 
 ## 1 本書について
 
-本書は、人流シミュレーションプラグイン(UC-win/Roadプラグイン)（以下「本システム」という。）の利用環境構築手順について記載しています。
+本書は、人流シミュレーションプラグイン(UC-win/Roadプラグイン)の利用環境構築手順について記載しています。
 
 > [!TIP]
 > 本システムの構成や仕様の詳細については[技術検証レポート][TechnicalReport]も参考にしてください。
@@ -24,13 +24,13 @@
 ## 3 インストール手順
 
 > [!Important]
-> 本システムを実行するにはUC-win/Roadが必要です。詳細は株式会社フォーラムエイトにお問い合わせ下さい。<br>
+> 本システムを実行するにはUC-win/Roadのライセンスが必要です。詳細は株式会社フォーラムエイトにお問い合わせ下さい。<br>
 > [フォーラムエイト(HP)][Forum8HP]<br>
 > [フォーラムエイト(サポートページ)][Forum8Support]
 
 ### 3-1 F8CrowdSimPlugin
 
-1. [GitHubページ][CrowdSimGitHub]からF8CrowdSimPlugin.bplをダウンロードします。
+1. [GitHubページ][CrowdSimGitHub]からUC-winRoad-CrowdSim-Plugin-v.0.1.0.zipをダウンロードします。
 2. [GitHubページ][CrowdSimGitHub]からソースファイルをダウンロードします。
 3. WindowsのエクスプローラでUC-win/Roadのデータディレクトリを開きます。
     > [!TIP]
@@ -39,7 +39,7 @@
     > 「アプリケーションデフォルト」画面が開くので、画面左側のタブから「フォルダ、ファイル関連」を選択します。「データディレクトリ」項目に記載されている場所を確認します。<br>
     > ![アプリケーションデフォルト画面][ApplicationDefaultForm]
 4. データディレクトリ直下の「Plugins」フォルダを開きます(もし「Plugins」フォルダが無ければ作成してください)。![データディレクトリ_Plugins][DataDirectory_Plugins]
-5. 「Plugins」フォルダ直下にダウンロードしたF8CrowdSimPlugin.bplを設置します。
+5. ダウンロードしたzipファイルを解凍し、「Plugins」フォルダ直下にF8CrowdSimPlugin.bplを設置します。
 6. WindowsのエクスプローラでUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダを開きます。
     > [!TIP]
     > UC-win/Roadをインストールすると、デフォルト設定ではデスクトップにショートカットが作成されます。<br>
@@ -51,9 +51,9 @@
 
 ### 3-2 CrowdSim
 
-1. [GitHubページ][CrowdSimGitHub]からCrowdSim.exeをダウンロードします。
+1. [GitHubページ][CrowdSimGitHub]からUC-winRoad-CrowdSim-Plugin-v.0.1.0.zipをダウンロードします。
 2. WindowsのエクスプローラでUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダを開きます。
-3. 前項で開いたフォルダに、ダウンロードしたCrowdSim.exeを設置します。
+3. ダウンロードしたファイルを解凍し、前項で開いたフォルダ内にCrowdSim.exeを設置します。
 
 UC-win/Roadをデフォルト設定でインストールし、[3-1](#3-インストール手順)と[3-2](#3-2-crowdsim)を手順どおりに進めた場合、最終的にフォルダ構成は次のようになります。
 
@@ -78,8 +78,7 @@ C:
 > [フォーラムエイト(HP)][Forum8HP]<br>
 > [フォーラムエイト(サポートページ)][Forum8Support]
 > [!Important]
-> F8CrowdSimPlugin、CrowdSimをビルドするにはDelphi 10.4.2が必要です。IDE Patchesは全て適用済みの状態にして下さい。
-
+> F8CrowdSimPlugin、CrowdSimをビルドするにはDelphi 10.4.2が必要です。IDE Patchesは全て適用済みの状態にして下さい。詳しくは[こちら][embarcadero]をご参照ください。<br>
 ソースファイルからF8CrowdSimPlugin、CrowdSimを生成することができます。<br>
 ソースファイルは[こちら][CrowdSimGitHub]からダウンロード可能です。<br>
 srcフォルダ下にF8CrowdSimPlugin、CrowdSimフォルダがあります。
@@ -161,15 +160,15 @@ Shadersフォルダ内のファイルを変更した場合は、インストー�
 ## 5 準備物一覧
 
 アプリケーションを利用するために以下のデータを入手します。<br>
-データの入力方法については操作マニュアルをご参照下さい。
+データの入力方法については[操作マニュアル][UserMan]をご参照下さい。
 
 |# | データ種別 | 機能| 用途| 入力方法 |
 | - | - | - | - | - |
 | 1| 3D都市モデル(CityGML)<br>[G空間情報センター][geospatial]から取得します。| 全般| 全般| 格納フォルダパス指定|
 | 2 | 人流データ(MF-Json)<br>[人流データ変換ツール][MFJsonConverter]を使って作成します。| 3次元形状の物体の移動データ|人流シミュレーションの初期値|格納フォルダパス指定|
 
-本システムでは、3D都市モデルの道路モデルの形状（LOD1、LOD3）を活用します。
-また、歩行エリア編集時の参考情報として建築物の形状も利用しています。
+本システムでは、3D都市モデルの交通（道路）モデルLOD1～LOD3.3を活用します。
+また、歩行エリア編集時の参考情報として建築物モデルの形状も利用しています。
 
 | 地物| 地物型| 属性区分| 属性名| 内容|
 | - | - | - | - | - |
@@ -180,13 +179,14 @@ Shadersフォルダ内のファイルを変更した場合は、インストー�
 
 <!---GitHubページなどは確定次第修正します-->
 <!--URL-->
-[TechnicalReport]: https://www.mlit.go.jp/plateau/news/
+[TechnicalReport]: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0102_ver01.pdf
 [Forum8HP]: https://www.forum8.co.jp/index.html
 [Forum8Support]: https://www.forum8.co.jp/tech/tech.htm
 [CrowdSimGitHub]: https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin
 [geospatial]: https://front.geospatial.jp/
 [MFJsonConverter]: https://github.com/Project-PLATEAU/MF-JSON-Converter
 [MENGEGitHub]: https://github.com/MengeCrowdSim/Menge
+[embarcadero]:https://blogs.embarcadero.com/ja/rad-studio-10-4-2patch-general-patchdelphi-compiler-patch-ja/
 <!--画像-->
 [ApplicationDefaultForm]: ../resources/devMan/applicationDefaultForm.png
 [delphiProjectOptionForm]: ../resources/devMan/delphiProjectOption.png
@@ -194,3 +194,5 @@ Shadersフォルダ内のファイルを変更した場合は、インストー�
 [buildSetting_CrowdSim]: ../resources/devMan/BuildSettings_FrowdSim.png
 [DataDirectory_Plugins]: ../resources/devMan/RoadData_Plugins.png
 [UCwinRoad_Shortcut]: ../resources/devMan/UCwinRoad_shortcut.png
+<!--MD-->
+[UserMan]: userMan.md

@@ -80,10 +80,10 @@
 <h1 id="環境構築手順書">環境構築手順書</h1>
 
 <h2 id="1-本書について">1 本書について</h2>
-<p>本書は、人流シミュレーションプラグイン(UC-win/Roadプラグイン)（以下「本システム」という。）の利用環境構築手順について記載しています。</p>
+<p>本書は、人流シミュレーションプラグイン(UC-win/Roadプラグイン)の利用環境構築手順について記載しています。</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>本システムの構成や仕様の詳細については<a href="https://www.mlit.go.jp/plateau/news/">技術検証レポート</a>も参考にしてください。</p>
+<p>本システムの構成や仕様の詳細については<a href="https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0102_ver01.pdf">技術検証レポート</a>も参考にしてください。</p>
 </div>
 <h2 id="2-動作環境">2 動作環境</h2>
 <p>本システムの動作環境は以下のとおりです。</p>
@@ -136,13 +136,13 @@
 <h2 id="3-インストール手順">3 インストール手順</h2>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>本システムを実行するにはUC-win/Roadが必要です。詳細は株式会社フォーラムエイトにお問い合わせ下さい。<br>
+<p>本システムを実行するにはUC-win/Roadのライセンスが必要です。詳細は株式会社フォーラムエイトにお問い合わせ下さい。<br>
 <a href="https://www.forum8.co.jp/index.html">フォーラムエイト(HP)</a><br>
 <a href="https://www.forum8.co.jp/tech/tech.htm">フォーラムエイト(サポートページ)</a></p>
 </div>
 <h3 id="3-1-f8crowdsimplugin">3-1 F8CrowdSimPlugin</h3>
 <ol>
-<li><a href="https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin">GitHubページ</a>からF8CrowdSimPlugin.bplをダウンロードします。</li>
+<li><a href="https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin">GitHubページ</a>からUC-winRoad-CrowdSim-Plugin-v.0.1.0.zipをダウンロードします。</li>
 <li><a href="https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin">GitHubページ</a>からソースファイルをダウンロードします。</li>
 <li>WindowsのエクスプローラでUC-win/Roadのデータディレクトリを開きます。
 <div class="TIP">
@@ -154,7 +154,7 @@ UC-win/Roadを起動して、メイン画面上部の「ファイル」タブ&gt
 </div>
 </li>
 <li>データディレクトリ直下の「Plugins」フォルダを開きます(もし「Plugins」フォルダが無ければ作成してください)。<img src="../resources/devMan/RoadData_Plugins.png" alt="データディレクトリ_Plugins"></li>
-<li>「Plugins」フォルダ直下にダウンロードしたF8CrowdSimPlugin.bplを設置します。</li>
+<li>ダウンロードしたzipファイルを解凍し、「Plugins」フォルダ直下にF8CrowdSimPlugin.bplを設置します。</li>
 <li>WindowsのエクスプローラでUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダを開きます。
 <div class="TIP">
 <h5>Tip</h5>
@@ -169,9 +169,9 @@ UC-win/Roadを起動して、メイン画面上部の「ファイル」タブ&gt
 </ol>
 <h3 id="3-2-crowdsim">3-2 CrowdSim</h3>
 <ol>
-<li><a href="https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin">GitHubページ</a>からCrowdSim.exeをダウンロードします。</li>
+<li><a href="https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin">GitHubページ</a>からUC-winRoad-CrowdSim-Plugin-v.0.1.0.zipをダウンロードします。</li>
 <li>WindowsのエクスプローラでUC-win/Roadの実行ファイル(UCwinRoad.exe)があるフォルダを開きます。</li>
-<li>前項で開いたフォルダに、ダウンロードしたCrowdSim.exeを設置します。</li>
+<li>ダウンロードしたファイルを解凍し、前項で開いたフォルダ内にCrowdSim.exeを設置します。</li>
 </ol>
 <p>UC-win/Roadをデフォルト設定でインストールし、<a href="#3-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86">3-1</a>と<a href="#3-2-crowdsim">3-2</a>を手順どおりに進めた場合、最終的にフォルダ構成は次のようになります。</p>
 <pre><code class="lang-bash">C:
@@ -195,11 +195,11 @@ UC-win/Roadを起動して、メイン画面上部の「ファイル」タブ&gt
 </div>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>F8CrowdSimPlugin、CrowdSimをビルドするにはDelphi 10.4.2が必要です。IDE Patchesは全て適用済みの状態にして下さい。</p>
-</div>
-<p>ソースファイルからF8CrowdSimPlugin、CrowdSimを生成することができます。<br>
+<p>F8CrowdSimPlugin、CrowdSimをビルドするにはDelphi 10.4.2が必要です。IDE Patchesは全て適用済みの状態にして下さい。詳しくは<a href="https://blogs.embarcadero.com/ja/rad-studio-10-4-2patch-general-patchdelphi-compiler-patch-ja/">こちら</a>をご参照ください。<br>
+ソースファイルからF8CrowdSimPlugin、CrowdSimを生成することができます。<br>
 ソースファイルは<a href="https://github.com/Project-PLATEAU/UC-winRoad-CrowdSim-Plugin">こちら</a>からダウンロード可能です。<br>
 srcフォルダ下にF8CrowdSimPlugin、CrowdSimフォルダがあります。</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -282,7 +282,7 @@ srcフォルダ下にF8CrowdSimPlugin、CrowdSimフォルダがあります。</
 </ol>
 <h2 id="5-準備物一覧">5 準備物一覧</h2>
 <p>アプリケーションを利用するために以下のデータを入手します。<br>
-データの入力方法については操作マニュアルをご参照下さい。</p>
+データの入力方法については<a href="userMan.html">操作マニュアル</a>をご参照下さい。</p>
 <table>
 <thead>
 <tr>
@@ -310,8 +310,8 @@ srcフォルダ下にF8CrowdSimPlugin、CrowdSimフォルダがあります。</
 </tr>
 </tbody>
 </table>
-<p>本システムでは、3D都市モデルの道路モデルの形状（LOD1、LOD3）を活用します。
-また、歩行エリア編集時の参考情報として建築物の形状も利用しています。</p>
+<p>本システムでは、3D都市モデルの交通（道路）モデルLOD1～LOD3.3を活用します。
+また、歩行エリア編集時の参考情報として建築物モデルの形状も利用しています。</p>
 <table>
 <thead>
 <tr>
@@ -356,6 +356,7 @@ srcフォルダ下にF8CrowdSimPlugin、CrowdSimフォルダがあります。</
 <!---GitHubページなどは確定次第修正します-->
 <!--URL-->
 <!--画像-->
+<!--MD-->
 
 </article>
           </div>
